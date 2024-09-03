@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+  
+    <button id="btn" onclick="names()">click me</button>
+    <h1 id="movies"></h1>
+    <script>
+// ......task1....
+let x=document.getElementById("btn")
+x.addEventListener("click",()=>{
+let z=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+hex="#";
+for(i=0;i<6;i++){
+    hex+= z[Math.floor(Math.random()*10)]
+}   
+document.body.style.backgroundColor=hex; 
+})
+
+function names(){
+    let k=["Don't trust everything u see.Even salt looks like sugar","Fake love doesn't last long only True Love will last longer and you will understand it one","One can always fake a smile,but that easy to fake ur feeling forever","love is like a firefly-it glows for a moment,then it's gone..","Love is not fake,girls is fake","Fake love damages people"]
+   let lk=k[Math.floor(Math.random()*k.length)]
+  let z1= document.getElementById("movies")
+   z1.innerHTML=lk
+}
+
+
+    </script>
+</body>
+</html>
